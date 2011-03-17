@@ -1,3 +1,5 @@
+import grails.plugins.springsecurity.SecurityConfigType
+
 // configuration for plugin testing - will not be included in the plugin zip
  
 log4j = {
@@ -34,8 +36,16 @@ grails.gorm.default.mapping = {
 	"user-type" type: org.joda.time.contrib.hibernate.PersistentLocalDateTime, class: org.joda.time.LocalDateTime
 	"user-type" type: org.joda.time.contrib.hibernate.PersistentPeriod, class: org.joda.time.Period
 }
+//
 
-// Added by the Spring Security Core plugin:
+// Added by the Spring Security Core plugin.
+// TODO:These need to be copied to powertac-server for standalone mode
 grails.plugins.springsecurity.userLookup.userDomainClassName = 'org.powertac.common.Broker'
 grails.plugins.springsecurity.userLookup.authorityJoinClassName = 'org.powertac.common.BrokerRole'
 grails.plugins.springsecurity.authority.className = 'org.powertac.common.Role'
+
+// Permission mapping
+grails.plugins.springsecurity.securityConfigType = SecurityConfigType.InterceptUrlMap
+grails.plugins.springsecurity.interceptUrlMap = [
+    '/*': ["hasRole('ROLE_ADMIN')"]
+]
