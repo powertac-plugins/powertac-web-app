@@ -54,5 +54,6 @@
     <li><g:link controller="cashPosition" action="list" class="cashaccounts" title="Cash Positions ">Cash Positions</g:link></li>
     <li><g:link controller="marketPosition" action="list" class="userdepots" title="Market Positions">Market Positions</g:link></li>
     <li><g:link controller="weather" action="list" class="userforecasts" title="Weather data">Weather data</g:link></li>
+    <li><g:link controller="rate" action="list" class="userforecasts" title="Rates">Rates</g:link></li>
   </ul>
 </div>
