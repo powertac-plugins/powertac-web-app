@@ -6,7 +6,7 @@ import org.powertac.common.Competition
 class CompetitionController {
 
   def scaffold = Competition
-
+  def competitionControlService
 
   /* REST mappings see grails-app/conf/UrlMappings.groovy */
 
@@ -27,5 +27,14 @@ class CompetitionController {
     } else {
       render competition.errors as XML
     }
+  }
+
+  def start = {
+    def competitionInstance = Competition.get(params.id)
+
+    competitionControlService.start()
+
+    flash.message = "Competition ${competitionInstance.name} started"
+    redirect action: list
   }
 }
