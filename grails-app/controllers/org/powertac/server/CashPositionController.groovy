@@ -3,7 +3,7 @@ package org.powertac.server
 import grails.converters.XML
 import org.powertac.common.CashPosition
 
-class CashUpdateController {
+class CashPositionController {
 
   def scaffold = CashPosition
 

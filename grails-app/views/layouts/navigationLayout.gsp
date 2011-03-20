@@ -51,7 +51,7 @@
     <li><g:link controller="orderbook" action="list" class="orderbooks" title="Orderbooks">Orderbooks</g:link></li>
     <li><g:link controller="product" action="list" class="products" title="Products">Products</g:link></li>
     <li><g:link controller="timeslot" action="list" class="products" title="Products">Timeslots</g:link></li>
-    <li><g:link controller="cashUpdate" action="list" class="cashaccounts" title="Cash Updates ">Cash Updated</g:link></li>
+    <li><g:link controller="cashPosition" action="list" class="cashaccounts" title="Cash Positions ">Cash Positions</g:link></li>
     <li><g:link controller="positionUpdate" action="list" class="userdepots" title="Position Updates">Position Updates</g:link></li>
     <li><g:link controller="weather" action="list" class="userforecasts" title="Weather data">Weather data</g:link></li>
   </ul>
