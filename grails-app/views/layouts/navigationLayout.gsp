@@ -56,5 +56,6 @@
     <li><g:link controller="weather" action="list" class="userforecasts" title="Weather data">Weather data</g:link></li>
     <li><g:link controller="rate" action="list" class="userforecasts" title="Rates">Rates</g:link></li>
     <li><g:link controller="tariffSpecification" action="list" class="userforecasts" title="Tariff Specifications">Tariff Specifications</g:link></li>
+    <li><g:link controller="tariffTransaction" action="list" class="userforecasts" title="Tariff Transactions">Tariff Transactions</g:link></li>
   </ul>
 </div>
