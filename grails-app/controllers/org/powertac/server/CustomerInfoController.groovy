@@ -3,7 +3,7 @@ package org.powertac.server
 import grails.converters.XML
 import org.powertac.common.CustomerInfo
 
-class CustomerController {
+class CustomerInfoController {
 
   def scaffold = CustomerInfo
 
