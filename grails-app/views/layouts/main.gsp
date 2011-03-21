@@ -54,12 +54,9 @@
       <g:layoutBody/>
 
       <div id="footer">
-        <p>Copyright &copy; 2007-2011 Institute of Information Systems and Management (IISM), KIT in cooperation with RSM Erasmus University and
+        <p>Copyright &copy; 2007-2011 Institute of Information Systems and Management (IISM) at KIT, RSM Erasmus University and
         University of Minnesota.</p>
         <p class="additionalInformation">System Information: URL: <a href="${ConfigurationHolder.config?.grails?.serverURL}">${ConfigurationHolder.config?.grails?.serverURL}</a> - Time: ${new Date()} - Version: <a href="https://github.com/powertac/powertac-server" target="_blank"><g:meta name="app.version"/></a></p>
-        <p class="additionalInformation">Server URL inside KIT campus: <a href="${ConfigurationHolder.config?.tacenergy?.connector?.internal?.url}" target="_blank">${ConfigurationHolder.config?.tacenergy?.connector?.internal?.url}</a><br/>
-          Server URL outside KIT campus (public): <a href="${ConfigurationHolder.config?.tacenergy?.connector?.external?.url}" target="_blank">${ConfigurationHolder.config?.tacenergy?.connector?.external?.url}</a></p>
-
       </div> <!-- footer -->
 
     </div> <!-- content -->
