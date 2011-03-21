@@ -152,6 +152,12 @@ thead tr {
 	padding: 5px 10px; /* link-box uses padding, user-box margin */
 }
 
+#navigation .link-box li p {
+	display: block;
+	padding: 5px 10px; /* link-box uses padding, user-box margin */
+  margin-bottom: 0;
+}
+
 #navigation .link-box li a:link,
 #navigation .link-box li a:visited {
 	color: black;
@@ -209,22 +215,22 @@ thead tr {
 	padding-left: 35px;
 }
 
-#navigation .link-box li .getinvolved {
-	background: transparent url(../images/icons/wrench.png) 10px center no-repeat;
+#navigation .link-box li .about {
+	background: transparent url(../images/icons/information.png) 10px center no-repeat;
 	padding-left: 35px;
 }
 
-#navigation .link-box li .downloads {
-	background: transparent url(../images/icons/arrow_down.png) 10px center no-repeat;
+#navigation .link-box li .disclaimer {
+	background: transparent url(../images/icons/script.png) 10px center no-repeat;
 	padding-left: 35px;
 }
 
-#navigation .link-box li .gettingstarted {
-	background: transparent url(../images/icons/lightbulb.png) 10px center no-repeat;
+#navigation .link-box li .contact {
+	background: transparent url(../images/icons/email.png) 10px center no-repeat;
 	padding-left: 35px;
 }
 
-#navigation .link-box li .agents {
+#navigation .link-box li .brokers {
 	background: transparent url(../images/icons/group.png) 10px center no-repeat;
 	padding-left: 35px;
 }
@@ -249,40 +255,76 @@ thead tr {
 	padding-left: 35px;
 }
 
-#navigation .link-box li .quotesntrades {
+#navigation .link-box li .markettransactions {
+	background: transparent url(../images/icons/newspaper.png) 30px center no-repeat;
+	padding-left: 55px;
+}
+
+#navigation .link-box li .shouts {
+	background: transparent url(../images/icons/comment.png) 30px center no-repeat;
+	padding-left: 55px;
+}
+
+#navigation .link-box li .orderbooks {
+	background: transparent url(../images/icons/table.png) 30px center no-repeat;
+	padding-left: 55px;
+}
+
+#navigation .link-box li .timeslots {
+	background: transparent url(../images/icons/timeline_marker.png) 30px center no-repeat;
+	padding-left: 55px;
+}
+
+#navigation .link-box li .cashpositions {
+	background: transparent url(../images/icons/coins.png) 30px center no-repeat;
+	padding-left: 55px;
+}
+
+#navigation .link-box li .marketpositions {
+	background: transparent url(../images/icons/briefcase.png) 30px center no-repeat;
+	padding-left: 55px;
+}
+
+#navigation .link-box li .tariffs {
+	background: transparent url(../images/icons/chart_bar.png) 10px center no-repeat;
+	padding-left: 35px;
+}
+
+#navigation .link-box li .rates {
+	background: transparent url(../images/icons/bricks.png) 30px center no-repeat;
+	padding-left: 55px;
+}
+
+#navigation .link-box li .tariffspecifications {
+	background: transparent url(../images/icons/chart_bar_link.png) 30px center no-repeat;
+	padding-left: 55px;
+}
+
+#navigation .link-box li .customerinfo {
+	background: transparent url(../images/icons/vcard.png) 10px center no-repeat;
+	padding-left: 35px;
+}
+
+#navigation .link-box li .market {
+	background: transparent url(../images/icons/world.png) 10px center no-repeat;
+	padding-left: 35px;
+}
+
+#navigation .link-box li .tarifftransactions {
 	background: transparent url(../images/icons/newspaper.png) 10px center no-repeat;
 	padding-left: 35px;
 }
 
-#navigation .link-box li .orders {
-	background: transparent url(../images/icons/page_white_text.png) 10px center no-repeat;
+#navigation .link-box li .weatherforecasts {
+	background: transparent url(../images/icons/weather_sun.png) 10px center no-repeat;
 	padding-left: 35px;
 }
 
-#navigation .link-box li .orderbooks {
+#navigation .link-box li .weatherreports {
 	background: transparent url(../images/icons/report.png) 10px center no-repeat;
 	padding-left: 35px;
 }
 
-#navigation .link-box li .products {
-	background: transparent url(../images/icons/basket.png) 10px center no-repeat;
-	padding-left: 35px;
-}
-
-#navigation .link-box li .cashaccounts {
-	background: transparent url(../images/icons/coins.png) 10px center no-repeat;
-	padding-left: 35px;
-}
-
-#navigation .link-box li .userdepots {
-	background: transparent url(../images/icons/briefcase.png) 10px center no-repeat;
-	padding-left: 35px;
-}
-
-#navigation .link-box li .userforecasts {
-	background: transparent url(../images/icons/chart_bar.png) 10px center no-repeat;
-	padding-left: 35px;
-}
 
 /* universities */
 

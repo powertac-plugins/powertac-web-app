@@ -1,3 +1,4 @@
+<%@ page import="org.powertac.common.Competition" %>
 <%--
   Sidebar navigation rendering
   User: cblock
@@ -20,11 +21,10 @@
 
 <div class="link-box">
   <ul>
-    <li>Quick Start</li>
-    <li><a href="${createLink(uri: '/')}" class="dashboard" title="Dashboard">Dashboard</a></li>
-    <li><g:link controller="info" action="gettingstarted">Getting Started</g:link></li>
-    <li><g:link controller="info" action="downloads">Downloads</g:link></li>
-    <li><g:link controller="info" action="getinvolved">Get involved</g:link></li>
+    <li>Power TAC</li>
+    <li><g:link controller="info" action="about" class="about">About</g:link></li>
+    <li><g:link controller="info" action="disclaimer" class="disclaimer">Disclaimer</g:link></li>
+    <li><g:link controller="info" action="contact" class="contact">Contact</g:link></li>
   </ul>
 </div>
 
@@ -32,32 +32,35 @@
 <div class="link-box">
   <ul>
     <li>Admin Area</li>
-
-    %{--<li><g:link controller="person" class="agents" title="Agents">Agents</g:link></li>
-<li><g:link controller="role" class="roles" title="Agents">Agent Roles</g:link></li>
-<li><g:link controller="announcement" class="announcements" title="Agents">Public Announcements</g:link></li>--}%
-    <li><g:link controller="runtimeLogging" class="logging" title="Agents">Adjust Logging</g:link></li>
+    <li><g:link controller="runtimeLogging" class="logging" title="Adjust Logging">Adjust Logging</g:link></li>
   </ul>
 </div>
 %{--</g:ifAllGranted>--}%
 
 <div class="link-box">
   <ul>
-    <li>Historic Data</li>
-    <li><g:link controller="broker" action="list" class="brokers" title="Brokers">Brokers</g:link></li>
-    <li><g:link controller="cashPosition" action="list" class="cashaccounts" title="Cash Positions ">Cash Positions</g:link></li>
-    <li><g:link controller="competition" action="list" class="competitions" title="Competitions">Competitions</g:link></li>
-    <li><g:link controller="customerInfo" action="list" class="competitions" title="Customer Info">Customer Info</g:link></li>
-    <li><g:link controller="marketPosition" action="list" class="userdepots" title="Market Positions">Market Positions</g:link></li>
-    <li><g:link controller="marketTransaction" action="list" class="quotesntrades" title="Transaction Log">Market Transactions</g:link></li>
-    <li><g:link controller="orderbook" action="list" class="orderbooks" title="Orderbooks">Orderbooks</g:link></li>
-    <li><g:link controller="product" action="list" class="products" title="Products">Products</g:link></li>
-    <li><g:link controller="rate" action="list" class="userforecasts" title="Rates">Rates</g:link></li>
-    <li><g:link controller="shout" action="list" class="orders" title="Shouts">Shouts</g:link></li>
-    <li><g:link controller="tariff" action="list" class="userforecasts" title="Tariffs">Tariffs</g:link></li>
-    <li><g:link controller="tariffSpecification" action="list" class="userforecasts" title="Tariff Specifications">Tariff Specifications</g:link></li>
-    <li><g:link controller="tariffTransaction" action="list" class="userforecasts" title="Tariff Transactions">Tariff Transactions</g:link></li>
-    <li><g:link controller="timeslot" action="list" class="products" title="Products">Timeslots</g:link></li>
-    <li><g:link controller="weather" action="list" class="userforecasts" title="Weather data">Weather data</g:link></li>
+    <g:if test="${Competition.currentCompetition()}">
+      <li>Competition "${Competition.currentCompetition().name}"</li>
+      <li><a href="${createLink(uri: '/')}" class="dashboard" title="Dashboard">Dashboard</a></li>
+      <li><g:link controller="broker" action="list" class="brokers" title="Brokers">Brokers</g:link></li>
+      <li><g:link controller="cashPosition" action="list" class="cashpositions" title="Cash Positions ">Cash Positions</g:link></li>
+      <li><g:link controller="marketPosition" action="list" class="marketpositions" title="Market Positions">Market Positions</g:link></li>
+      <li><g:link controller="customerInfo" action="list" class="customerinfo" title="Customer Info">Customer Info</g:link></li>
+      <li><p class="market">Market</p></li>
+      <li><g:link controller="marketTransaction" action="list" class="markettransactions" title="Market Transactions">Market Transactions</g:link></li>
+      <li><g:link controller="orderbook" action="list" class="orderbooks" title="Orderbooks">Orderbooks</g:link></li>
+      <li><g:link controller="shout" action="list" class="shouts" title="Shouts">Shouts</g:link></li>
+      <li><g:link controller="timeslot" action="list" class="timeslots" title="Timeslots">Timeslots</g:link></li>
+      <li><g:link controller="tariff" action="list" class="tariffs" title="Tariffs">Tariffs</g:link></li>
+      <li><g:link controller="rate" action="list" class="rates" title="Rates">Rates</g:link></li>
+      <li><g:link controller="tariffSpecification" action="list" class="tariffspecifications" title="Tariff Specifications">Tariff Specifications</g:link></li>
+      <li><g:link controller="tariffTransaction" action="list" class="tarifftransactions" title="Tariff Transactions">Tariff Transactions</g:link></li>
+      <li><g:link controller="weather" action="list" class="weatherforecasts" title="Weather data">Weather Forecasts</g:link></li>
+      <li><g:link controller="weather" action="list" class="weatherreports" title="Weather data">Weather Reports</g:link></li>
+    </g:if>
+    <g:else>
+      <li>No current competition found</li>
+      <li><g:link controller="competition" action="create" class="createcompetition" title="Create new competition">Create new competition</g:link></li>
+    </g:else>
   </ul>
 </div>
