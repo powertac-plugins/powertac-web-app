@@ -21,13 +21,11 @@
       <a href="${resource(dir: '')}" title="Power TAC"></a>
     </div>
 
-    <div id="nav">
+    <div id="universities">
       <ul class="grid_8 prefix_4">
-        <li><g:link controller="info" action="about">About</g:link></li>
-        <li><g:link controller="info" action="terms">Terms of Use</g:link></li>
-        <li><g:link controller="info" action="disclaimer">Disclaimer</g:link></li>
-        <li><a href="http://www.powertac.org/docs/latest/manual/index.html" target="_blank">Documentation</a></li>
-        <li><g:link controller="info" action="contact">Contact</g:link></li>
+        <li><a href="http://tac.cs.umn.edu/" target="_blank" title="University of Minnesota"><img src="${resource(dir: 'images/logos', file: 'umn_logo.png')}" alt="University of Minnesota"/></a></li>
+        <li><a href="http://www.erim.eur.nl/ERIM/Research/Centres/Learning_Agents" target="_blank"><img src="${resource(dir: 'images/logos', file: 'rsm_logo.png')}" alt="Rotterdam School of Management (RSM)" title="Rotterdam School of Management (RSM)"/></a></li>
+        <li><a href="http://www.kit.edu" target="_blank" title="Karlsruhe Institute of Technology (KIT)"><img src="${resource(dir: 'images/logos', file: 'kit_logo.png')}" alt="Karlsruhe Institute of Technology"/></a></li>
       </ul>
     </div>
 
@@ -40,14 +38,6 @@
     <div id="navigation" class="grid_4">
 
       <g:applyLayout name="navigationLayout"/>
-
-      <div id="universities">
-        <ul>
-          <li><a href="http://www.kit.edu" target="_blank" title="Karlsruhe Institute of Technology (KIT)"><img src="${resource(dir: 'images/logos', file: 'kit_logo.png')}" alt="Karlsruhe Institute of Technology"/></a></li>
-          <li><a href="http://www.erim.eur.nl/ERIM/Research/Centres/Learning_Agents" target="_blank"><img src="${resource(dir: 'images/logos', file: 'rsm_logo.png')}" alt="Rotterdam School of Management (RSM)" title="Rotterdam School of Management (RSM)"/></a></li>
-          <li><a href="http://tac.cs.umn.edu/" target="_blank" title="University of Minnesota"><img src="${resource(dir: 'images/logos', file: 'umn_logo.png')}" alt="University of Minnesota"/></a></li>
-        </ul>
-      </div>
 
     </div> <!-- navigation -->
 

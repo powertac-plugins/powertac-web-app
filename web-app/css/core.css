@@ -333,18 +333,23 @@ thead tr {
 
 /* universities */
 
-#navigation #universities {
+#header #universities {
   margin-bottom: 20px;
 }
 
-#navigation #universities ul {
+#header #universities ul {
 	list-style-type: none;
 	overflow: hidden;
 }
 
-#navigation #universities li {
+#header #universities li {
 	display: inline;
-	margin: 0 3px;
+	margin: 0 10px;
+  float: right;
+}
+
+#header #universities li:first-child {
+  margin-right: 0;
 }
 
 /* content */
