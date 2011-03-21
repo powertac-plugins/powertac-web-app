@@ -42,9 +42,11 @@
       <g:applyLayout name="navigationLayout"/>
 
       <div id="universities">
-        <a href="http://www.kit.edu" target="_blank" title="Karlsruhe Institute of Technology (KIT)"><img src="${resource(dir: 'images/logos', file: 'kit_logo.png')}" alt="Karlsruhe Institute of Technology"/></a>
-        <a href="http://www.erim.eur.nl/ERIM/Research/Centres/Learning_Agents" target="_blank"><img src="${resource(dir: 'images/logos', file: 'rsm_logo.png')}" alt="Rotterdam School of Management (RSM)" title="Rotterdam School of Management (RSM)"/></a>
-        <a href="http://tac.cs.umn.edu/" target="_blank" title="University of Minnesota"><img src="${resource(dir: 'images/logos', file: 'umn_logo.png')}" alt="University of Minnesota"/></a>
+        <ul>
+          <li><a href="http://www.kit.edu" target="_blank" title="Karlsruhe Institute of Technology (KIT)"><img src="${resource(dir: 'images/logos', file: 'kit_logo.png')}" alt="Karlsruhe Institute of Technology"/></a></li>
+          <li><a href="http://www.erim.eur.nl/ERIM/Research/Centres/Learning_Agents" target="_blank"><img src="${resource(dir: 'images/logos', file: 'rsm_logo.png')}" alt="Rotterdam School of Management (RSM)" title="Rotterdam School of Management (RSM)"/></a></li>
+          <li><a href="http://tac.cs.umn.edu/" target="_blank" title="University of Minnesota"><img src="${resource(dir: 'images/logos', file: 'umn_logo.png')}" alt="University of Minnesota"/></a></li>
+        </ul>
       </div>
 
     </div> <!-- navigation -->

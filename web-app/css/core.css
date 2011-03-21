@@ -1,4 +1,4 @@
-/* Title: Stylesheet for TAC Energy */
+/* Title: Stylesheet for Power TAC */
 /* Note: Compress using http://www.csscompressor.com/ before deploying */
 
 body {
@@ -287,10 +287,17 @@ thead tr {
 /* universities */
 
 #navigation #universities {
-    width: 120px;
-    height: 65px;
-    left: 50px;
-    margin-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+#navigation #universities ul {
+	list-style-type: none;
+	overflow: hidden;
+}
+
+#navigation #universities li {
+	display: inline;
+	margin: 0 3px;
 }
 
 /* content */
