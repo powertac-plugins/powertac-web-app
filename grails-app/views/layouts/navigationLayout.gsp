@@ -33,6 +33,7 @@
   <ul>
     <li>Admin Area</li>
     <li><g:link controller="runtimeLogging" class="logging" title="Adjust Logging">Adjust Logging</g:link></li>
+    <li><g:link controller="info" action="plugins" class="plugins" title="Plugins">Plugins</g:link></li>
   </ul>
 </div>
 %{--</g:ifAllGranted>--}%
@@ -55,8 +56,8 @@
       <li><g:link controller="rate" action="list" class="rates" title="Rates">Rates</g:link></li>
       <li><g:link controller="tariffSpecification" action="list" class="tariffspecifications" title="Tariff Specifications">Tariff Specifications</g:link></li>
       <li><g:link controller="tariffTransaction" action="list" class="tarifftransactions" title="Tariff Transactions">Tariff Transactions</g:link></li>
-      <li><g:link controller="weather" action="list" class="weatherforecasts" title="Weather data">Weather Forecasts</g:link></li>
-      <li><g:link controller="weather" action="list" class="weatherreports" title="Weather data">Weather Reports</g:link></li>
+      <li><g:link controller="weather" action="list" class="weatherforecasts" title="Weather Forecasts">Weather Forecasts</g:link></li>
+      <li><g:link controller="weather" action="list" class="weatherreports" title="Weather Reports">Weather Reports</g:link></li>
     </g:if>
     <g:else>
       <li>No current competition found</li>

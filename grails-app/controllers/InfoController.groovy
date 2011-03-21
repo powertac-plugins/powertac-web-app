@@ -25,4 +25,6 @@ class InfoController {
   def tutorial = { }
 
   def userlist = { }
+
+  def plugins = { }
 }

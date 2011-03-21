@@ -1,4 +1,3 @@
-<%@ page import="org.powertac.common.Competition; org.powertac.server.CompetitionController" %>
 %{--
   - Copyright 2009-2010 the original author or authors.
   -
@@ -19,32 +18,37 @@
 
 <html>
 <head>
-  <title>Welcome</title>
+  <title>Plugins</title>
   <meta name="layout" content="main"/>
 </head>
+
 <body>
 
-<h1>Dashboard</h1>
+  <h1>Plugins</h1>
 
-<div class="clear"></div>
+  <div class="clear"></div>
 
-<div id="content-box">
+  <div id="content-box">
 
-  <div class="section section-last">
+   <div class="section">
     <div class="section-header">
-      Current Competition
+      Installed Power TAC Plugins
     </div>
     <div class="section-content">
-      <g:if test="${Competition.currentCompetition()}">
-        <p><g:link controller="competition" action="start" id="${Competition.currentCompetition()?.id}">Start competition "${Competition.currentCompetition()?.name}"</g:link></p>
-      </g:if>
-      <g:else>
-        <p>No current competition found, <g:link controller="competition" action="create">create new competition</g:link>.</p>
-      </g:else>
+      <ul>
+        <g:set var="pluginManager"
+            value="${applicationContext.getBean('pluginManager')}"></g:set>
+
+        <g:each var="plugin" in="${pluginManager.userPlugins}">
+          <g:if test="${plugin.name.contains('powertac')}">
+            <li>${plugin.name} - ${plugin.version}</li>
+          </g:if>
+        </g:each>
+
+      </ul>
     </div>
   </div>
-
-</div>
+  </div> <!-- content-box -->
 
 </body>
 </html>
