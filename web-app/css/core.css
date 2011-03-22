@@ -198,6 +198,11 @@ thead tr {
   color: rgb(88, 88, 88); /* 35% gray */
 }
 
+#navigation .link-box li:first-child a:hover,
+#navigation .link-box li:first-child a:active {
+  color: rgb(65, 125, 100); /* green */
+}
+
 #navigation .link-box li:last-child {
   -webkit-border-bottom-right-radius: 6px;
   -webkit-border-bottom-left-radius: 6px;
