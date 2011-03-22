@@ -42,7 +42,7 @@
 <div class="link-box">
   <ul>
     <g:if test="${Competition.currentCompetition()}">
-      <li>Competition "${Competition.currentCompetition().name}"</li>
+      <li><g:link controller="competition" action="show" class="competition" id="${Competition.currentCompetition().id}" title="${Competition.currentCompetition().name}">${Competition.currentCompetition().name}</g:link></li>
       <li><a href="${createLink(uri: '/')}" class="dashboard" title="Dashboard">Dashboard</a></li>
       <li><g:link controller="broker" action="list" class="brokers" title="Brokers">Brokers</g:link></li>
       <li><g:link controller="cashPosition" action="list" class="cashpositions" title="Cash Positions ">Cash Positions</g:link></li>
