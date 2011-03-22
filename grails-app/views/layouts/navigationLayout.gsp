@@ -32,8 +32,9 @@
 <div class="link-box">
   <ul>
     <li>Admin Area</li>
-    <li><g:link controller="runtimeLogging" class="logging" title="Adjust Logging">Adjust Logging</g:link></li>
+    <li><g:link controller="info" action="statistics" class="statistics" title="Statistics">Statistics</g:link></li>
     <li><g:link controller="info" action="plugins" class="plugins" title="Plugins">Plugins</g:link></li>
+    <li><g:link controller="runtimeLogging" class="logging" title="Adjust Logging">Adjust Logging</g:link></li>
   </ul>
 </div>
 %{--</g:ifAllGranted>--}%

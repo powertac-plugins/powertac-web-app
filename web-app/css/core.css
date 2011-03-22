@@ -330,6 +330,11 @@ thead tr {
 	padding-left: 35px;
 }
 
+#navigation .link-box li .statistics {
+	background: transparent url(../images/icons/monitor.png) 10px center no-repeat;
+	padding-left: 35px;
+}
+
 
 /* universities */
 
