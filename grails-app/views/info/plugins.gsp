@@ -24,31 +24,44 @@
 
 <body>
 
-  <h1>Plugins</h1>
+<h1>Plugins</h1>
 
-  <div class="clear"></div>
+<div class="clear"></div>
 
-  <div id="content-box">
+<div id="content-box">
 
-   <div class="section">
+  <div class="section">
     <div class="section-header">
       Installed Power TAC Plugins
     </div>
     <div class="section-content">
-      <ul>
-        <g:set var="pluginManager"
-            value="${applicationContext.getBean('pluginManager')}"></g:set>
-
-        <g:each var="plugin" in="${pluginManager.userPlugins}">
-          <g:if test="${plugin.name.contains('powertac')}">
-            <li>${plugin.name} - ${plugin.version}</li>
-          </g:if>
-        </g:each>
-
-      </ul>
+      <div class="list">
+        <table>
+          <thead>
+          <tr>
+            <th>Name</th>
+            <th>Version</th>
+            <th>Path</th>
+          </tr>
+          </thead>
+          <tbody>
+          <g:set var="pluginManager"
+              value="${applicationContext.getBean('pluginManager')}"></g:set>
+          <g:each var="plugin" in="${pluginManager.userPlugins}" status="i">
+            <g:if test="${plugin.name.contains('powertac')}">
+              <tr class="${(i % 2) == 0 ? 'odd' : 'even'}">
+                <td>${plugin.name}</td>
+                <td>${plugin.version}</td>
+                <td>${plugin.pluginPath}</td>
+              </tr>
+            </g:if>
+          </g:each>
+          </tbody>
+        </table>
+      </div>
     </div>
   </div>
-  </div> <!-- content-box -->
+</div> <!-- content-box -->
 
 </body>
 </html>
