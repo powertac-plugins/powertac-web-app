@@ -23,6 +23,12 @@ log4j = {
            'net.sf.ehcache.hibernate'
 
     warn   'org.mortbay.log'
+    
+    info 'org.powertac.common',
+         'org.powertac.server',
+         'org.powertac.accountingservice',
+         'org.powertac.tariffmarket',
+         'org.powertac.genco'
 }
 
 // Added by the Joda-Time plugin:

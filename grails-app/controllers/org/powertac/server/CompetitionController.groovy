@@ -32,7 +32,7 @@ class CompetitionController {
   def start = {
     def competitionInstance = Competition.get(params.id)
 
-    competitionControlService.start()
+    competitionControlService.init()
 
     flash.message = "Competition ${competitionInstance.name} started"
     redirect action: list
