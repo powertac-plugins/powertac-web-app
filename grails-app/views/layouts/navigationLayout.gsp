@@ -47,6 +47,7 @@
       <li><g:link controller="broker" action="list" class="brokers" title="Brokers">Brokers</g:link></li>
       <li><g:link controller="cashPosition" action="list" class="cashpositions" title="Cash Positions ">Cash Positions</g:link></li>
       <li><g:link controller="marketPosition" action="list" class="marketpositions" title="Market Positions">Market Positions</g:link></li>
+      <li><g:link controller="genCo" action="list" class="genco" title="GenCo">GenCo</g:link></li>
       <li><g:link controller="customerInfo" action="list" class="customerinfo" title="Customer Info">Customer Info</g:link></li>
       <li><p class="market">Market</p></li>
       <li><g:link controller="marketTransaction" action="list" class="markettransactions" title="Market Transactions">Market Transactions</g:link></li>

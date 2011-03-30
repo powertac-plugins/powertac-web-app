@@ -314,6 +314,11 @@ thead tr {
   padding-left: 55px;
 }
 
+#navigation .link-box li .genco {
+  background: transparent url(../images/icons/lightning_add.png) 10px center no-repeat;
+  padding-left: 35px;
+}
+
 #navigation .link-box li .customerinfo {
   background: transparent url(../images/icons/vcard.png) 10px center no-repeat;
   padding-left: 35px;

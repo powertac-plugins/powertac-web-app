@@ -3,6 +3,8 @@ grails.project.test.class.dir = "target/test-classes"
 grails.project.test.reports.dir = "target/test-reports"
 //grails.project.war.file = "target/${appName}-${appVersion}.war"
 grails.plugin.location.PowertacCommon = "../powertac-common"
+grails.plugin.location.PowertacSimpleGenco = "../powertac-genco"
+
 grails.project.dependency.resolution = {
     // inherit Grails' default dependencies
     inherits("global") {
