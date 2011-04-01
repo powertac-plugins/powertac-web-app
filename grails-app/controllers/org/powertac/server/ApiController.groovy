@@ -1,8 +1,10 @@
 package org.powertac.server
 
-import org.powertac.common.command.LoginResponseCmd
-import org.powertac.common.command.LoginResponseCmd.Code
 import grails.converters.XML
+import org.codehaus.groovy.grails.commons.ConfigurationHolder
+import org.powertac.common.Broker
+import org.powertac.common.command.LoginResponseCmd
+import org.powertac.common.command.LoginResponseCmd.StatusCode
 
 class ApiController {
 
@@ -13,8 +15,18 @@ class ApiController {
   }
 
   def login = {
-//    log.info "${request.XML.apiKey}"
-    def response = new LoginResponseCmd(returnCode: Code.OK, serverAddress: "http://www.test.com:1234")
+    def loginRequest = request.XML
+    def broker = Broker.findByUsername("${loginRequest.username}")
+    def response
+
+    if (!broker) {
+      response = new LoginResponseCmd(status: StatusCode.ERR_USERNAME_NOT_FOUND)
+    } else if (broker.apiKey != loginRequest.apiKey.text()) {
+      response = new LoginResponseCmd(status: StatusCode.ERR_INVALID_APIKEY)
+    } else {
+      response = new LoginResponseCmd(status: StatusCode.OK, serverAddress: ConfigurationHolder.config.powertac.broker.url)
+    }
+
     render(contentType: "text/xml", encoding: "UTF-8", text: response as XML)
   }
 }
