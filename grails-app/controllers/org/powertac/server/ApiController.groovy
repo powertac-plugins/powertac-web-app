@@ -24,7 +24,7 @@ class ApiController {
     } else if (broker.apiKey != loginRequest.apiKey.text()) {
       response = new LoginResponseCmd(status: StatusCode.ERR_INVALID_APIKEY)
     } else {
-      response = new LoginResponseCmd(status: StatusCode.OK, serverAddress: ConfigurationHolder.config.powertac.broker.url)
+      response = new LoginResponseCmd(status: StatusCode.OK, serverAddress: ConfigurationHolder.config?.powertac?.connector?.url)
     }
 
     render(contentType: "text/xml", encoding: "UTF-8", text: response as XML)
