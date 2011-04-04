@@ -6,9 +6,12 @@ import org.powertac.common.Broker
 import org.powertac.common.command.LoginResponseCmd
 import org.powertac.common.command.LoginResponseCmd.StatusCode
 
+
 class ApiController {
 
   static allowedMethods = [login: 'POST']
+
+  def brokerLookupService
 
   def index = {
     render "" // Needs to be blank or any call to /api/ will be redirected to /api/login
@@ -16,7 +19,7 @@ class ApiController {
 
   def login = {
     def loginRequest = request.XML
-    def broker = Broker.findByUsername("${loginRequest.username}")
+    def broker = brokerLookupService.findByLoginRequest(loginRequest)
     def response
 
     if (!broker) {
