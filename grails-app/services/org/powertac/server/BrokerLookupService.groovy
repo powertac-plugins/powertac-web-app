@@ -20,11 +20,11 @@ class BrokerLookupService {
       }
       if (ConfigurationHolder.config?.powertac?.deployment?.type != 'competition') {
         broker = new Broker(username: request.username.text(),
-                   apiKey: apiKey,
+                   id: apiKey,
                    enabled: true).save(failOnError: true)
 
         // temporary workaround to add broker to current competition
-        Competition.currentCompetition()?.addToBrokers(broker)
+        //Competition.currentCompetition()?.addToBrokers(broker)
       }
     }
     return broker
