@@ -10,23 +10,21 @@ import org.powertac.common.Competition
 class BrokerLookupService {
 
   static transactional = true
+  def springSecurityService
 
   def findByLoginRequest(request) {
+    log.debug("findByLoginRequest - start")
     def broker = Broker.findByUsername("${request.username}")
     if (!broker) {
-      def apiKey = request.apiKey?.text()
-      if (apiKey?.length() < 32) {
-        apiKey = UUID.randomUUID().toString()     // very low probability of collision
-      }
       if (ConfigurationHolder.config?.powertac?.deployment?.type != 'competition') {
         broker = new Broker(username: request.username.text(),
-                   apiKey: apiKey,
+                   password: springSecurityService.encodePassword(request.password.text()),
                    enabled: true).save(failOnError: true)
-
-        // temporary workaround to add broker to current competition
-        Competition.currentCompetition()?.addToBrokers(broker)
       }
     }
+    log.debug("broker is ${broker}, errors are ${broker.errors}")
+    log.debug("findByLoginRequest - end")
+
     return broker
   }
 }
