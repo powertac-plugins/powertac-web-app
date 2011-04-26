@@ -20,6 +20,7 @@ class CompetitionController {
   }
 
   def add = {
+    log.info "Adding new competition"
     def competition = new Competition(params.competition)
     competition.save()
     if (!competition?.hasErrors()) {
