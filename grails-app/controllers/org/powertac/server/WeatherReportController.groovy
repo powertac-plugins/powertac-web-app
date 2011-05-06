@@ -1,14 +1,14 @@
 package org.powertac.server
 
 import grails.converters.XML
-import org.powertac.common.Weather
+import org.powertac.common.WeatherReport
 
-class WeatherController {
+class WeatherReportController {
 
-  def scaffold = Weather
+  def scaffold = WeatherReport
 
   def get = {
-    def weatherInstance = Weather.get(params.id)
+    def weatherInstance = WeatherReport.get(params.id)
     render (contentType:"text/xml",encoding:"UTF-8", text: weatherInstance as XML)
   }
 }
