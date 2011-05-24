@@ -1,5 +1,5 @@
 %{--
-  - Copyright 2009-2010 the original author or authors.
+  - Copyright 2009-2011 the original author or authors.
   -
   - Licensed under the Apache License, Version 2.0 (the "License");
   - you may not use this file except in compliance with the License.
@@ -55,38 +55,9 @@
     <div class="section">
 
 	  <div class="section-content">
-        <p>Please use the <a href="user-list.gsp">TAC Energy user mailing list</a> to send us comments and feedback.</p>
+        <p>Please use the <a href="http://power-tac-developers.975333.n3.nabble.com/">TAC Energy user mailing list</a> to send us comments and feedback.</p>
         
         <div class="grid_5 column">
-          <h5>Carsten Block</h5>
-          Institute of Information Systems and Management (IISM)<br/>
-          Karlsruhe Institute of Technology (KIT)<br/>
-          Englerstr. 14<br/>
-          76131 Karlsruhe<br/>
-          Germany<br/>
-          <br/>
-          +49 (721) 603-8322<br/>
-          <a href="javascript:linkTo_UnCryptMailto('nbjmup;dbstufo/cmpdlAlju/fev');">carsten [dot] block [at] kit [dot] edu</a><br/>
-          <a href="http://www.iism.kit.edu/block" target="_blank">www.iism.kit.edu/block</a>
-        </div>
-
-        <div class="grid_5 column">
-          <h5>John Collins</h5>
-          Department of Computer Science &amp; Engineering<br/>
-          University of Minnesota<br/>
-          4-192 EE/CS Building<br/>
-          200 Union Street SE<br/>
-          Minneapolis, MN 55455<br/>
-          USA<br/>
-          <br/>
-          +1 (612) 624-5130<br/>
-          <a href="javascript:linkTo_UnCryptMailto('nbjmup;kdpmmjotAdt/vno/fev');">jcollins [at] cs [dot] umn [dot] edu</a><br/>
-          <a href="http://www.cs.umn.edu/people/faculty/jcollins" target="_blank">www.cs.umn.edu/people/faculty/jcollins</a>
-        </div>
-
-        <div class="clear"></div>
-
-        <div class="grid_10 column">
           <h5>Wolfgang Ketter</h5>
           RSM Erasmus University<br/>
           Department of Decision and Information Sciences<br/>
@@ -97,6 +68,20 @@
           +31 (10) 408-2624<br/>
           <a href="javascript:linkTo_UnCryptMailto('nbjmup;xlfuufsAstn/om');">wketter [at] rsm [dot] nl</a><br/>
           <a href="http://www.ketter.ws/" target="_blank">www.ketter.ws</a>
+        </div>
+
+        <div class="grid_5 column">
+          <h5>John Collins</h5>
+          Department of Computer Science &amp; Engineering<br/>
+          University of Minnesota<br/>
+          4-192 Keller Hall<br/>
+          200 Union Street SE<br/>
+          Minneapolis, MN 55455<br/>
+          USA<br/>
+          <br/>
+          +1 (612) 625-0331<br/>
+          <a href="javascript:linkTo_UnCryptMailto('nbjmup;kdpmmjotAdt/vno/fev');">jcollins [at] cs [dot] umn [dot] edu</a><br/>
+          <a href="http://www.cs.umn.edu/people/faculty/jcollins" target="_blank">www.cs.umn.edu/people/faculty/jcollins</a>
         </div>
 
         <div class="clear"></div>
