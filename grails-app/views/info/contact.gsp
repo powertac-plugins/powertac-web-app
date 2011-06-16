@@ -55,10 +55,10 @@
     <div class="section">
 
 	  <div class="section-content">
-        <p>Please use the <a href="http://power-tac-developers.975333.n3.nabble.com/">TAC Energy user mailing list</a> to send us comments and feedback.</p>
+        <p>Please use the <a href="http://power-tac-developers.975333.n3.nabble.com/">Power TAC developers mailing list</a> to send us comments and feedback.</p>
         
         <div class="grid_5 column">
-          <h5>Wolfgang Ketter</h5>
+          <h5>Wolf Ketter</h5>
           RSM Erasmus University<br/>
           Department of Decision and Information Sciences<br/>
           Burgemeester Oudlaan 50<br/>

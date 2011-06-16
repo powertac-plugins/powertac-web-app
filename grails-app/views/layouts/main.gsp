@@ -23,8 +23,8 @@
 
     <div id="universities">
       <ul class="grid_8 prefix_4">
-        <li><a href="http://tac.cs.umn.edu/" target="_blank" title="University of Minnesota"><img src="${resource(dir: 'images/logos', file: 'umn_logo.png')}" alt="University of Minnesota"/></a></li>
         <li><a href="http://www.erim.eur.nl/ERIM/Research/Centres/Learning_Agents" target="_blank"><img src="${resource(dir: 'images/logos', file: 'rsm_logo.png')}" alt="Rotterdam School of Management (RSM)" title="Rotterdam School of Management (RSM)"/></a></li>
+        <li><a href="http://tac.cs.umn.edu/" target="_blank" title="University of Minnesota"><img src="${resource(dir: 'images/logos', file: 'umn_logo.png')}" alt="University of Minnesota"/></a></li>
         <li><a href="http://www.kit.edu" target="_blank" title="Karlsruhe Institute of Technology (KIT)"><img src="${resource(dir: 'images/logos', file: 'kit_logo.png')}" alt="Karlsruhe Institute of Technology"/></a></li>
       </ul>
     </div>
@@ -46,8 +46,9 @@
       <g:layoutBody/>
 
       <div id="footer">
-        <p>Copyright &copy; 2007-2011 Institute of Information Systems and Management (IISM) at KIT, RSM Erasmus University and
-        University of Minnesota.</p>
+        <p>Copyright &copy; 2007-2011 RSM Erasmus University,
+        University of Minnesota, and
+        Institute of Information Systems and Management (IISM) at KIT</p>
         <p class="additionalInformation">System Information: URL: <a href="${ConfigurationHolder.config?.grails?.serverURL}">${ConfigurationHolder.config?.grails?.serverURL}</a> - Time: ${new Date()} - Version: <a href="https://github.com/powertac/powertac-server" target="_blank"><g:meta name="app.version"/></a></p>
       </div> <!-- footer -->
 

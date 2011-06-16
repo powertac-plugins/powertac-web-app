@@ -27,36 +27,5 @@
 
   <div class="clear"></div>
 
-  <div id="content-box">
-
-    <div class="section">
-
-	  <div class="section-header">
-	    Contact Person
-	  </div>
-
-	  <div class="section-content">
-		<p>Prof. Dr. Christof Weinhardt (verantwortlich i.S.d. TMG)<br/>
-           Institute of Information Systems and Management (IISM)<br/>
-           Karlsruhe Institute of Technology (KIT)<br/>
-           Englerstr. 14<br/>
-           76131 Karlsruhe<br/>
-           Germany<br/>
-           <br/>
-           Phone: +49 (721) 603-8370<br/>
-           Fax: +49 (721) 603-8399<br/>
-           Mail: info@iism.uni-karlsruhe.de
-        </p>
-
-        <p>
-         <a href="http://www.disclaimer.de/disclaimer.htm?farbe=FFFFFF/000000/000000/000000#2" target="_blank">Exclusion of Liability</a>
-        </p>
-
-	  </div>
-
-	</div> <!-- section -->
-
-  </div> <!-- content-box -->
-
 </body>
 </html>
