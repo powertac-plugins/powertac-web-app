@@ -23,7 +23,6 @@
   <ul>
     <li>Power TAC</li>
     <li><g:link controller="info" action="about" class="about">About</g:link></li>
-    <li><g:link controller="info" action="disclaimer" class="disclaimer">Disclaimer</g:link></li>
     <li><g:link controller="info" action="contact" class="contact">Contact</g:link></li>
   </ul>
 </div>
@@ -58,8 +57,8 @@
       <li><g:link controller="rate" action="list" class="rates" title="Rates">Rates</g:link></li>
       <li><g:link controller="tariffSpecification" action="list" class="tariffspecifications" title="Tariff Specifications">Tariff Specifications</g:link></li>
       <li><g:link controller="tariffTransaction" action="list" class="tarifftransactions" title="Tariff Transactions">Tariff Transactions</g:link></li>
-      <li><g:link controller="weather" action="list" class="weatherforecasts" title="Weather Forecasts">Weather Forecasts</g:link></li>
-      <li><g:link controller="weather" action="list" class="weatherreports" title="Weather Reports">Weather Reports</g:link></li>
+      <li><g:link controller="weatherForecast" action="list" class="weatherforecasts" title="Weather Forecasts">Weather Forecasts</g:link></li>
+      <li><g:link controller="weatherReport" action="list" class="weatherreports" title="Weather Reports">Weather Reports</g:link></li>
     </g:if>
     <g:else>
       <li>No current competition found</li>
