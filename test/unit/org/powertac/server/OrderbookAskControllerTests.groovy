@@ -2,7 +2,7 @@ package org.powertac.server
 
 import grails.test.*
 
-class OrderbookEntryControllerTests extends ControllerUnitTestCase {
+class OrderbookAskControllerTests extends ControllerUnitTestCase {
   protected void setUp() {
     super.setUp()
   }
