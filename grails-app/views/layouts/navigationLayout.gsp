@@ -53,6 +53,7 @@
       <li><g:link controller="orderbook" action="list" class="orderbooks" title="Orderbooks">Orderbooks</g:link></li>
       <li><g:link controller="shout" action="list" class="shouts" title="Shouts">Shouts</g:link></li>
       <li><g:link controller="timeslot" action="list" class="timeslots" title="Timeslots">Timeslots</g:link></li>
+      <li><g:link controller="pluginConfig" action="list" class="plugins" title="Plugin Config">Plugin Config</g:link></li>
       <li><g:link controller="tariff" action="list" class="tariffs" title="Tariffs">Tariffs</g:link></li>
       <li><g:link controller="rate" action="list" class="rates" title="Rates">Rates</g:link></li>
       <li><g:link controller="tariffSpecification" action="list" class="tariffspecifications" title="Tariff Specifications">Tariff Specifications</g:link></li>
