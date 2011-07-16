@@ -14,7 +14,6 @@ class BrokerLookupService {
   def participantManagementService
 
   def findByLoginRequest(request) {
-    log.debug("findByLoginRequest - start")
     def broker = Broker.findByUsername("${request.username}")
     if (!broker) {
       if (ConfigurationHolder.config?.powertac?.deployment?.type != 'competition') {
@@ -26,8 +25,7 @@ class BrokerLookupService {
       }
     }
 
-    log.debug("broker is ${broker}, errors are ${broker?.errors}")
-    log.debug("findByLoginRequest - end")
+    log.debug("findByLoginRequest(${request.username?.text()}) - broker is ${broker}, errors are ${broker?.errors}")
 
     return broker
   }
