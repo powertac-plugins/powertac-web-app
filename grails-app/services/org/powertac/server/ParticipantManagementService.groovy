@@ -38,8 +38,12 @@ class ParticipantManagementService implements ApplicationContextAware
   }
 
   synchronized boolean authenticate(brokerUsername) {
-    def brokersInCurrentCompetition = brokersInCompetitions.first()
-    return brokersInCurrentCompetition?.contains(brokerUsername)
+    boolean allowed = false
+    if (brokersInCompetitions) {
+      def brokersInCurrentCompetition = brokersInCompetitions.first()
+      allowed = brokersInCurrentCompetition?.contains(brokerUsername)
+    }
+    return allowed
   }
 
   synchronized boolean advanceToNewGame() {
